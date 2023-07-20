@@ -1,10 +1,117 @@
 body {
-    background-color: azure;
+  background-color: rgb(226, 239, 239);
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
 }
 
-#Top-navigation-bar {
-    background-color: greenyellow;
-    text-align: right;
-    text-overflow:wrap;
+/* index page or home page css */
+
+#div-top {
+  background-color: rgb(0, 255, 0);
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
+#div-top-text-1 {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px;
+  margin-left: 50px;
+}
+
+#div-top-text-1:hover {
+  background-color:rgb(18, 116, 18);
+  color: white;
+}
+
+#div-top-text-2 {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+#div-top-text-2:hover {
+  background-color: rgb(18, 116, 18);
+  color: white;
+}
+
+#div-dropdown {
+  position: relative;
+}
+
+#div-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(5, 173, 5);
+  height: 150px;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  margin-top: 15px;
+}
+
+#div-dropdown:hover #div-dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 7px 5px 0px 7px;
+}
+
+#div-top-text-3 {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+#div-top-text-3:hover {
+  background-color: rgb(18, 116, 18);
+  color: white;
+}
+
+#div-top-button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: -65px;
+}
+
+#top-nav-bar-button-1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  border-radius: 20px ;
+  border-style: none;
+  background-color: rgb(5, 173, 5);
+  color: black;
+  padding: 5px 20px 5px 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+#top-nav-bar-button-1:hover {
+  background-color: rgb(18, 116, 18);
+  color: white;
+  cursor: pointer;
+}
+
+#top-nav-bar-button-2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  border-radius: 20px ;
+  border-style: none;
+  background-color: rgb(5, 173, 5);
+  color: black;
+  padding: 5px 20px 5px 20px;
+  margin: 0px 50px 0px 5px;
+}
+
+#top-nav-bar-button-2:hover {
+  background-color: rgb(18, 116, 18);
+  color: white;
+  cursor: pointer;
+}

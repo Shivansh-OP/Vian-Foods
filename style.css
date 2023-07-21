@@ -26,6 +26,14 @@ body {
   color: white;
 }
 
+#div-top-text-1:active {
+  background-color: blueviolet;
+}
+
+#div-dropdown {
+  position: relative;
+}
+
 #div-top-text-2 {
   color: black;
   font-size: 22px;
@@ -38,14 +46,10 @@ body {
   color: white;
 }
 
-#div-dropdown {
-  position: relative;
-}
-
 #div-dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(5, 173, 5);
+  background-color: rgb(0, 255, 0);
   height: 150px;
   width: 250px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
@@ -56,11 +60,22 @@ body {
   display: block;
 }
 
+#dropdown-heading {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .dropdown-content {
   display: block;
-  color: white;
+  color: black;
   text-decoration: none;
-  margin: 7px 5px 0px 7px;
+  text-align: center;
+  margin: 7px 150px 0px 7px;
+}
+
+.dropdown-content:hover {
+  background-color: rgb(18, 116, 18);
+  color: white;
 }
 
 #div-top-text-3 {
@@ -82,15 +97,53 @@ body {
   margin-top: -65px;
 }
 
-#top-nav-bar-button-1 {
+#search {
+  height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  padding: 15px 0px 15px 25px;
+  background-color: rgb(5, 173, 5);
+  background-image: url("pics/SearchIconBlack.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 260px;
+}
+
+#search:hover {
+  background-color: rgb(18, 116, 18);
+  background-image: url("pics/SearchIconWhite.png");
+  background-repeat: no-repeat;
+}
+
+#search::placeholder {
+  color: black;
   font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.0px;
+}
+
+#search:hover::placeholder {
+  color: white;
+}
+
+input {
+  font-family: "DM Sans", sans-serif;
+}
+
+button {
+  font-family: "DM Sans", sans-serif;
+}
+
+#top-nav-bar-button-1 {
   font-size: 22px;
   border-radius: 20px ;
   border-style: none;
   background-color: rgb(5, 173, 5);
   color: black;
   padding: 5px 20px 5px 20px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 15px;
 }
 
 #top-nav-bar-button-1:hover {
@@ -100,7 +153,6 @@ body {
 }
 
 #top-nav-bar-button-2 {
-  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   border-radius: 20px ;
   border-style: none;
@@ -115,3 +167,125 @@ body {
   color: white;
   cursor: pointer;
 }
+
+/* signup-login page css */
+
+#h3-signup-login-top {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.span-signup-login-top {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+display: none;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: rgb(0, 255, 0);
+}
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: rgb(0, 255, 0);
+  background-color: black;
+  font-family: 'unicons';
+  content: '\eb4f';
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.checkbox:checked + label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
+
+#div-signup-login-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div-signup-login {
+  height: 400px;
+  width: 440px;
+  border-radius: 10px;
+  background-color: rgb(7, 189, 7);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#h2-signup-login-middle {
+  font-size: 30px;
+  color: black;
+}
+
+.input-img {
+  position: absolute;
+  margin: 7px 0px 6px 10px;
+}
+
+.input {
+  height: 38px;
+  width: 320px;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.input::placeholder {
+  color: black;
+  letter-spacing: 1.0px;
+}
+
+#button-password {
+  position: absolute;
+  margin: 6px 0px 6px -40px;
+  padding-right: 30px;
+  height: 30px;
+  width: 30px;
+  background: none;
+  border-style: none;
+}
+
+#no-show-password {
+  display: hidden;
+}
+
+#show-password {
+  display: block;
+}
+
+
+
+
+
+
+
+
+

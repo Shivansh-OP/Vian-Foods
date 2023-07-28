@@ -518,7 +518,7 @@ button {
 #driver-helper-img-1 {
   position: relative;
   height: auto;
-  width: 1536px;
+  width: 1519px;
 }
 
 #driver-helper-div-1 {
@@ -537,6 +537,57 @@ button {
   text-align: center;
   font-size: 40px;
   margin-top: 55px;
+}
+
+#driver-helper-div-2 {  
+  height: 650px;
+  width: 500px;
+  background-color: var(--backgroundColor);
+  color: var(--textColor2);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 50px 0px 0px 170px;
+}
+
+#driver-helper-heading-2 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#driver-helper-heading-3 {
+  font-size: 24px;
+  margin: -5px 0px 0px 70px;
+}
+
+#driver-helper-text-1 {
+  font-size: 18px;
+  margin: 10px 0px 0px 50px;
+}
+
+#driver-helper-heading-4 {
+  font-size: 24px;
+  margin-left: 70px;
+}
+
+#driver-helper-text-2 {
+  font-size: 18px;
+  margin: -10px 0px 0px 50px;
+}
+
+#driver-helper-button-1 {
+  border-radius: 10px;
+  border-style: none;
+  background-color: #d3d3d3;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 0px 0px 70px;
+  letter-spacing: 0.6px;
+}
+
+#driver-helper-button-1:hover {
+  background-color: var(--hoverColor2);
+  color: var(--textColor2);
+  cursor: pointer;
 }
 
 /* signup-login page css */

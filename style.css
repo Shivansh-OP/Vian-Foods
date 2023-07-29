@@ -253,7 +253,7 @@ button {
 /* navigation bar ends here */
 
 /* page contents starts */
-#div-page-contents {
+#div-page-contents-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,18 +318,36 @@ button {
   cursor: pointer;
 }
 
-#home-heading-3 {
+.div-page-contents-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+}
+
+#div-page-contents-3 {
+  height: 200px;
+  width: 450px;
+  background-color: var(--hoverColor2);
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 50px 0px 50px 0px;
+}
+
+#home-heading-3 {
+  text-align: center;
+  color: var(--textColor2);
+  margin-top: 70px;
+}
+
+.div-page-contents-4 {
+  display: flex;
 }
 
 #home-img-2 {
   float: right;
   height: 170px;
   width: 170px;
-  margin: -30px 100px 0px 0px;
+  margin: -30px 0px 0px 800px;
 }
 
 #home-heading-4 {
@@ -337,7 +355,7 @@ button {
 }
 
 #home-text-2 {
-  margin: -10px 0px 0px 100px;
+  margin: -70px 0px 0px 100px;
   font-size: 18px;
 }
 
@@ -345,17 +363,15 @@ button {
   float: left;
   height: 170px;
   width: auto;
-  margin: 60px 0px 0px 100px;
+  margin: 70px 0px 0px 100px;
 }
 
 #home-heading-5 {
-  float: right;
-  margin: 80px -160px 0px 0px;
+  margin: 80px 0px 0px 830px;
 }
 
 #home-text-3 {
-  float: right;
-  margin: -110px 100px 0px 500px;
+  margin: -100px 0px 0px 450px;
   font-size: 18px;
 }
 
@@ -363,27 +379,90 @@ button {
   float: right;
   height: 170px;
   width: auto;
-  margin: 30px 100px 0px 0px;
+  margin: 70px 0px 0px 715px;
 }
 
 #home-heading-6 {
-  margin: 280px 0px 0px 100px;
+  margin: 80px 0px 0px 100px;
 }
 
 #home-text-4 {
-  margin-left: 100px;
+  margin: -100px 0px 0px 100px;
   font-size: 18px;
 }
 
 #home-heading-7 {
-  float: right;
-  margin: 80px -300px 0px 0px;
+  margin: 100px 0px 0px 710px;
 }
 
 #home-text-5 {
-  float: right;
-  margin: -110px 100px 0px 510px;
+  margin: -80px 0px 0px 450px;
   font-size: 18px;
+}
+
+#div-page-contents-5 {
+  height: 680px;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--hoverColor1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 70px 0px 0px 110px;
+  position: relative;
+}
+
+#home-img-5 {
+  height: 423px;
+  width: 578px;
+  margin: -250px 60px 0px -110px;
+}
+
+#div-page-contents-6 {
+  height: 200px;
+  width: 500px;
+  background-color: var(--hoverColor2);
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: -215px 0px 0px 50px;
+}
+
+#home-text-6 {
+  position: absolute;
+  font-size: 18px;
+  text-align: left;
+  margin: 330px 110px 0px 120px;
+}
+
+#home-button-3 {
+  position: absolute;
+  top: 86%;
+  left: 9%;
+  border-radius: 5px;
+  border-style: none;
+  letter-spacing: 0.6px;
+  background-color: #d3d3d3;
+  color: var(--textColor1);
+  padding: 10px 25px 10px 25px;
+}
+
+#home-button-4 {
+  position: absolute;
+  top: 86%;
+  left: 18.5%;
+  border-radius: 5px;
+  border-style: none;
+  letter-spacing: 0.6px;
+  background-color: #d3d3d3;
+  color: var(--textColor1);
+  padding: 10px 25px 10px 25px;
+}
+
+#home-button-3:hover, #home-button-4:hover {
+  background-color: var(--hoverColor2);
+  color: var(--textColor2);
+  cursor: pointer;
 }
 
 /* page contents ends */
@@ -398,7 +477,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 270px;
+  margin-top: 55px;
 }
 
 /* career page css */
@@ -539,7 +618,11 @@ button {
   margin-top: 55px;
 }
 
-#driver-helper-div-2 {  
+#driver-helper-div-2 {
+  display: flex;
+}
+
+#driver-helper-div-3 {  
   height: 650px;
   width: 500px;
   background-color: var(--backgroundColor);
@@ -552,7 +635,7 @@ button {
 #driver-helper-heading-2 {
   font-size: 32px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #driver-helper-heading-3 {
@@ -588,6 +671,30 @@ button {
   background-color: var(--hoverColor2);
   color: var(--textColor2);
   cursor: pointer;
+}
+
+#driver-helper-div-4 {
+  height: 500px;
+  width: 350px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 125px 0px 0px 350px;
+}
+
+.driver-helper-div-5 {
+  display: flex;
+  margin: 33px 0px 0px 60px;
+}
+
+.driver-helper-text-3 {
+  font-size: 20px;
+  margin: 0px 0px 0px 10px;
+}
+
+.driver-helper-text-4 {
+  font-size: 16px;
+  margin: 13px 0px 0px 100px;
 }
 
 /* signup-login page css */

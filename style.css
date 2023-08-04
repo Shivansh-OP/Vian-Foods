@@ -180,10 +180,6 @@ input {
   background-color: #2caef5;
 }
 
-#search-bar:hover {
-  background-color: var(--hoverColor2);
-}
-
 #search-bar::placeholder {
   color: var(--textColor1);
   font-size: 16px;

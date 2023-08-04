@@ -6,6 +6,23 @@
   --textColor2: #FFFFFF;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d3d3d3; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--hoverColor1);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hoverColor2);
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   margin: 0px;
@@ -105,12 +122,20 @@ body {
   margin-top: 10px;
 }
 
+#dropdown-arangement-1 {
+  display: flex;
+}
+
+.dropdown-arangement-2 {
+  display: inline-block;
+}
+
 .dropdown-content {
   display: block;
   color: var(--textColor1);
   text-decoration: none;
   text-align: center;
-  margin: 7px 150px 0px 7px;
+  margin: 0px 0px 10px 30px;
 }
 
 .dropdown-content:hover {
@@ -186,10 +211,6 @@ input {
   letter-spacing: 1.0px;
 }
 
-#search-bar:hover::placeholder {
-  color: var(--textColor2);
-}
-
 #search-button {
   height: 30px;
   width: 50px;
@@ -231,6 +252,17 @@ button {
   cursor: pointer;
 }
 
+#div-right-signup-login-button-1 {
+  font-size: 22px;
+  border-radius: 20px ;
+  border-style: none;
+  background-color: var(--hoverColor2);
+  color: var(--textColor2);
+  padding: 5px 20px 5px 20px;
+  margin: 0px 5px 0px 15px;
+  cursor: pointer;
+}
+
 #div-right-button-2 {
   font-size: 22px;
   border-radius: 20px ;
@@ -244,6 +276,17 @@ button {
 #div-right-button-2:hover {
   background-color: var(--hoverColor2);
   color: var(--textColor2);
+  cursor: pointer;
+}
+
+#div-right-signup-login-button-2 {
+  font-size: 22px;
+  border-radius: 20px ;
+  border-style: none;
+  background-color: var(--hoverColor2);
+  color: var(--textColor2);
+  padding: 5px 20px 5px 20px;
+  margin: 0px 50px 0px 5px;
   cursor: pointer;
 }
 /* navigation bar ends here */
@@ -474,6 +517,18 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 55px;
+}
+
+/* products page css */
+
+#products-nav {
+  font-size: 32px;
+  margin: 0px 5px 5px 20px;
+  color: var(--textColor1);
+}
+
+#products-nav:hover {
+  cursor: pointer;
 }
 
 /* career page css */

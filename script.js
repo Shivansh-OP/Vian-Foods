@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let slideIndex = 0;
   const slides = document.getElementsByClassName("products-slides");
   const arrows = document.getElementsByClassName("products-arrow");
+  const dots = document.getElementsByClassName("products-dot");
 
   showSlides(slideIndex);
 
@@ -19,7 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
       slides[i].style.display = "none";
     }
 
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("products-dot-active");
+    }
+
     slides[slideIndex].style.display = "block";
+    dots[slideIndex].classList.add("products-dot-active");
   }
 
   for (let i = 0; i < arrows.length; i++) {
@@ -35,13 +41,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", () => {
+      clearTimeout(autoSlideTimeout);
+      showSlides(i);
+      startAutoSlide();
+    });
+  }
+
   let autoSlideTimeout;
   function startAutoSlide() {
     autoSlideTimeout = setTimeout(() => {
       slideIndex++;
       showSlides(slideIndex);
       startAutoSlide();
-    }, 4500);
+    }, 3500);
   }
 
   startAutoSlide();

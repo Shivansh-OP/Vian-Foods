@@ -540,12 +540,27 @@ button {
 }
 
 #products-slideshow {
-  position: relative;
-  margin: auto;
   padding-top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.products-arrow {
+  font-size: 60px;
+  color: var(--hoverColor2);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+#products-arrow-left {
+  left: 5%;
+}
+
+#products-arrow-left:hover {
+  color: var(--textColor2);
 }
 
 .products-slides {
@@ -557,6 +572,11 @@ button {
   width: 80%;
   object-fit: cover;
   margin-left: 10%;
+}
+
+
+#products-arrow-right {
+  right: 5%;
 }
 
 .products-dot {

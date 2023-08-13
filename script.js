@@ -2,25 +2,49 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-let slideIndex = 0;
-seeSlides();
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("products-slides");
+  const arrows = document.getElementsByClassName("products-arrow");
 
-function seeSlides() {
-  let i;
-  let slides = document.getElementsByClassName("products-slides");
-  let dots = document.getElementsByClassName("products-dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  showSlides(slideIndex);
+
+  function showSlides(index) {
+    if (index < 0) {
+      slideIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+      slideIndex = 0;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("products-active", "");
+
+  for (let i = 0; i < arrows.length; i++) {
+    arrows[i].addEventListener("click", () => {
+      clearTimeout(autoSlideTimeout);
+      if (i === 0) {
+        slideIndex--;
+      } else {
+        slideIndex++;
+      }
+      showSlides(slideIndex);
+      startAutoSlide();
+    });
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(seeSlides, 3500);
-}
+
+  let autoSlideTimeout;
+  function startAutoSlide() {
+    autoSlideTimeout = setTimeout(() => {
+      slideIndex++;
+      showSlides(slideIndex);
+      startAutoSlide();
+    }, 4500);
+  }
+
+  startAutoSlide();
 });
 
 // signup-login page js

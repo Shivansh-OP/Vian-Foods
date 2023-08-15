@@ -648,7 +648,7 @@ button {
 #div-products-4 {
   display: block;
   height: 460px;
-  width: 300px;
+  width: 250px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: var(--hoverColor1);
@@ -657,7 +657,7 @@ button {
 
 .products-img-1 {
   height: 250px;
-  width: 300px;
+  width: 250px;
   background-color: var(--textColor2);
   border-radius: 10px 10px 0px 0px;
 }
@@ -779,18 +779,13 @@ button {
 #products-button-1 {
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 20px;
   background-color: #d3d3d3;
   color: var(--textColor1);
   border: none;
   border-radius: 10px;
-  margin: 10px 30px;
-  padding: 5px 35px;
-}
-
-#products-icons {
-  font-size: 22px;
-  margin-right: 5px;
+  margin: 12px 31px;
+  padding: 5px 30px;
 }
 
 #products-button-1:hover, #products-icons:hover {
@@ -804,6 +799,18 @@ button {
   justify-content: center;
   align-items: center;
   margin: 50px 0px 40px 0px;
+}
+
+#products-footer {
+  height: 70px;
+  width: auto;
+  background-color: var(--hoverColor2);
+  color: var(--textColor2);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
 }
 
 /* career page css */

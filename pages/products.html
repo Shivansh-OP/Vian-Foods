@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="../pics/favicon.png">
+    <script src="../script.js"></script>
+    <title>Explore - Vian Foods</title>
+  </head>
+  <body>
+    <nav>
+      <div id="div-top">
+        <div id="div-left">
+          <a id="div-left-text-1" href="../index.html">Home</a>
+          <div id="div-dropdown">
+            <a id="div-left-products-text-2" href="products.html">
+              Products
+              <i class="material-symbols-outlined" id="dropdown-arrow">
+              expand_more
+              </i>
+            </a>
+            <div id="div-dropdown-content">
+              <h3 id="dropdown-heading">Brands</h3>
+              <div id="dropdown-arangement-1">
+                <div class="dropdown-arangement-2">
+                  <a class="dropdown-content" href="products.html#nippo">Nippo</a>
+                  <a class="dropdown-content" href="products.html#pachranga">Pachranga</a>
+                  </div>
+                  <div class="dropdown-arangement-2"> 
+                  <a class="dropdown-content" href="products.html#veeba">Veeba</a>
+                  <a class="dropdown-content" href="products.html#wild-stone">Wild Stone</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <a id="div-left-text-3" href="../career/career.html">Career</a>
+          <a id="div-left-text-4" href="../contact-us.html">Contact Us</a>
+        </div>
+        <div id="div-right">
+          <input type="search" id="search-bar" placeholder="Search......">
+          <button id="search-button">
+            <i class="material-symbols-outlined" id="search-icon" onclick="location.href">
+              search
+            </i>
+          </button>
+          <i id="products-nav" class="material-symbols-outlined">
+            shopping_bag
+          </i>
+          <button id="div-right-button-1" onclick="location.href='../signup-login.html'">Signup</button>
+          <h1>/</h1>
+          <button id="div-right-button-2" onclick="location.href='../signup-login.html'">Login</button>
+        </div>
+      </div>
+    </nav>
+    <div id="products-slideshow">
+      <div class="products-arrow" id="products-arrow-left">
+        &#10094;
+      </div>
+      <div class="products-slides products-fade">
+        <img class="products-img" onclick="location.href=''" src="../pics/products-img-1.jpg">
+      </div>
+      <div class="products-slides products-fade">
+        <img class="products-img" src="../pics/products-img-2.png">
+      </div>
+      <div class="products-slides products-fade">
+        <img class="products-img" src="../pics/products-img-3.png">
+      </div>
+      <div class="products-slides products-fade">
+        <img class="products-img" src="../pics/products-img-4.png">
+      </div>
+      <div class="products-arrow" id="products-arrow-right">
+        &#10095;
+      </div>
+    </div>
+    <br>
+    <div id="div-products-dots">
+      <span class="products-dot"></span> 
+      <span class="products-dot"></span> 
+      <span class="products-dot"></span>
+      <span class="products-dot"></span>
+    </div>
+    <section id="nippo">
+      <div id="div-products-1">
+        <div class="div-products-2">
+          <h1 class="div-products-heading-1">
+            Nippo Products
+          </h1>
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-5.jpg">
+          <h3 class="products-heading-2">
+            AA BATTERY
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-6.jpg">
+          <h3 class="products-heading-2">
+            AAA BATTERY
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-7.jpg">
+          <h3 class="products-heading-2">
+            C&D BATTERY
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-8.jpg">
+          <h3 class="products-heading-2">
+            ALKAINE BATTERY
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-9.jpg">
+          <h3 class="products-heading-2">
+            TORCHES
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-10.png">
+          <h3 class="products-heading-2">
+            LED BULBS
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-11.png">
+          <h3 class="products-heading-2">
+            FLEXBOX 4M
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-12.jpg">
+          <h3 class="products-heading-2">
+            MOSQUITO BAT
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+    </section>
+    <section id="pachranga">
+      <div class="div-products-11">
+        <div class="div-products-2">
+          <h1 class="div-products-heading-1">
+            Pachranga Products
+          </h1>
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-13.webp">
+          <h3 class="products-heading-2">
+            MANGO PICKLE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-14.webp">
+          <h3 class="products-heading-2">
+            CARROT PICKLE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-15.webp">
+          <h3 class="products-heading-2">
+            MIXED FRUIT CHUTNEY 
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-16.webp">
+          <h3 class="products-heading-2">
+            GARLIC PASTE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-17.webp">
+          <h3 class="products-heading-2">
+            AMLA MURABBA
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-18.webp">
+          <h3 class="products-heading-2">
+            TOMATO KETCHUP
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-19.webp">
+          <h3 class="products-heading-2">
+            VINEGAR
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-20.webp">
+          <h3 class="products-heading-2">
+            AMLA CANDY
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+    </section>
+    <section id="veeba">
+      <div class="div-products-11">
+        <div class="div-products-2">
+          <h1 class="div-products-heading-1">
+            Veeba Products
+          </h1>
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-21.webp">
+          <h3 class="products-heading-2">
+            MAYONNAISE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-22.webp">
+          <h3 class="products-heading-2">
+            THOUSAND ISLAND
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-23.webp">
+          <h3 class="products-heading-2">
+            PIZZA PASTA SAUCE 
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-24.webp">
+          <h3 class="products-heading-2">
+            BARBEQUE SAUCE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-25.webp">
+          <h3 class="products-heading-2">
+            HONEY MUSTARD
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-26.webp">
+          <h3 class="products-heading-2">
+            CHEESE & JALAPENO
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-27.webp">
+          <h3 class="products-heading-2">
+            PEANUT BUTTER
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-28.webp">
+          <h3 class="products-heading-2">
+            CARAMEL FUDGE
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+    </section>
+    <section id="wild-stone">
+      <div class="div-products-11">
+        <div class="div-products-2">
+          <h1 class="div-products-heading-1">
+            Wild Stone Products
+          </h1>
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-29.webp">
+          <h3 class="products-heading-2">
+            EDGE PERFUME
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-30.webp">
+          <h3 class="products-heading-2">
+            FOREST SPICE PERFUME
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-31.webp">
+          <h3 class="products-heading-2">
+            COLOGNE DEODORANT
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-32.webp">
+          <h3 class="products-heading-2">
+            MUSK DEODORANT
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+      <div class="div-products-3">
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-33.webp">
+          <h3 class="products-heading-2">
+            ULTRA SENSUAL TALC
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-34.webp">
+          <h3 class="products-heading-2">
+            HYDRA ENERY TALC
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-35.webp">
+          <h3 class="products-heading-2">
+            ULTRA SHAVING FOAM
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+        <div id="div-products-4">
+          <img class="products-img-1" src="../pics/products-img-36.webp">
+          <h3 class="products-heading-2">
+            ENERY SHAVING FOAM
+          </h3>
+          <div class="div-products-5">
+            <div class="discount-calculator" data-listing="12" data-selling="10">
+              <div class="div-products-6">
+                <h4 class="products-text-1">
+                  MRP :-
+                </h4>
+                <p class="products-text-2">
+                  ₹12
+                </p>
+              </div>
+              <div class="div-products-7">
+                <h4 class="products-text-3">
+                  OUR PRICE :-
+                </h4>
+                <p class="products-text-4">
+                  ₹10
+                </p>
+              </div>
+              <div class="div-products-8">
+                <h4 class="products-text-5">
+                  DISCOUNT :-
+                </h4>
+                <p class="discount-output"></p>
+              </div>
+            </div>
+          </div>
+          <div class="div-products-9">
+            <div class="div-products-10" id="down" onclick="adjustQuantity(this, 'down')">
+              -
+            </div>
+            <input type="text" class="products-input-1 quantity-input" value="1">
+            <div class="div-products-10" id="up" onclick="adjustQuantity(this, 'up')">
+              +
+            </div>
+          </div>
+          <button id="products-button-1">
+            ADD TO CART
+          </button>       
+        </div>
+      </div>
+    </section>
+    <footer id="products-footer">
+      &copy; 2016 - 2023 Vian Foods. All rights reserved.
+    </footer>
+  </body>
+</html>

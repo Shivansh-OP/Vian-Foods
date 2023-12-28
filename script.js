@@ -1,6 +1,4 @@
 // products page js
-
-
 // automatic slidebar
 document.addEventListener("DOMContentLoaded", function() {
   let slideIndex = 0;
@@ -53,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
   startAutoSlide();
 });
 
+// cart
+function openCartPopup() {
+  var cartUrl = 'cart.html';
+  window.open(cartUrl, 'CartPopup', 'width=400,height=600,resizable=yes,scrollbars=yes');
+}
+
 // discount 
 class DiscountCalculator {
   constructor(container) {
@@ -92,6 +96,20 @@ function adjustQuantity(button, action) {
   input.value = quantity;
 }
 
+// career page js
+
+
+function redirectToEmail() {
+  var email = 'mailto:your-vianfoods@gmail.com'; 
+  window.location.href = email;
+}
+
+// contact us page js 
+
+function sendMessage() {
+  alert('Message sent');
+}
+
 // signup-login page js
 
 
@@ -119,10 +137,6 @@ function showPasswordLogin() {
     }
 }
 
-// responive 
-
-
-// var menuOpen = false;
-// function menuOpenCLose() {
-//     if ()
-// }
+function register(){
+  alert('Registered Successfully');
+}

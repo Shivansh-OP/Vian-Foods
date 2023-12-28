@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="icon" type="image/x-icon" href="../pics/favicon.png">
+    <script src="../script.js"></script>
     <title>Get In Touch - Vian Foods</title>
   </head>
   <body>
@@ -40,12 +41,12 @@
           <a id="div-left-contact-us-text-4" href="contact-us.html">Contact Us</a>
         </div>
         <div id="div-right">
-          <input type="search" id="search-bar" placeholder="Search......">
+          <!-- <input type="search" id="search-bar" placeholder="Search......">
           <button id="search-button">
             <i class="material-symbols-outlined" id="search-icon">
               search
             </i>
-          </button>
+          </button> -->
           <button id="div-right-button-1" onclick="location.href='signup-login.html'">Signup</button>
           <h1>/</h1>
           <button id="div-right-button-2" onclick="location.href='signup-login.html'">Login</button>
@@ -95,7 +96,7 @@
           </p>
           <textarea id="contact-us-textarea-1"></textarea>
         </form>
-        <button id="contact-us-button-1">
+        <button id="contact-us-button-1" onclick="sendMessage()">
           Send Message
         </button>
       </div>
